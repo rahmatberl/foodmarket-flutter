@@ -3,14 +3,14 @@ part of 'pages.dart';
 class GeneralPage extends StatelessWidget {
   final String title;
   final String subtitle;
-  final Function onBackbbuttonPressed;
+  final Function onBackButtonPressed;
   final Widget child;
   final Color backColor;
 
   GeneralPage({
     this.title = "Title",
     this.subtitle = "subtitle",
-    this.onBackbbuttonPressed,
+    this.onBackButtonPressed,
     this.child,
     this.backColor,
   });
@@ -38,15 +38,22 @@ class GeneralPage extends StatelessWidget {
                     color: Colors.white,
                     child: Row(
                       children: [
-                        onBackbbuttonPressed != null
-                            ? Container(
-                                width: defaultMargin,
-                                height: defaultMargin,
-                                margin: EdgeInsets.only(right: 26),
-                                decoration: BoxDecoration(
-                                    image: DecorationImage(
-                                        image: AssetImage(
-                                            'assets/back_arrow.png'))))
+                        onBackButtonPressed != null
+                            ? GestureDetector(
+                                onTap: () {
+                                  if (onBackButtonPressed != null) {
+                                    onBackButtonPressed();
+                                  }
+                                },
+                                child: Container(
+                                    width: defaultMargin,
+                                    height: defaultMargin,
+                                    margin: EdgeInsets.only(right: 26),
+                                    decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                            image: AssetImage(
+                                                'assets/back_arrow.png')))),
+                              )
                             : SizedBox(),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
