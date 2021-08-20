@@ -11,7 +11,6 @@ class _AddressPageState extends State<AddressPage> {
     TextEditingController phoneNumController = TextEditingController();
     TextEditingController houseNumController = TextEditingController();
     TextEditingController addressController = TextEditingController();
-    TextEditingController cityController = TextEditingController();
     List item = ['Bandung', 'Jakarta', 'Yogyakarta', 'Padang'];
     String _itemData = "Bandung";
     return GeneralPage(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:foodmarket/models/models.dart';
 import 'package:foodmarket/shared/shared.dart';
 import 'package:foodmarket/ui/widgets/widgets.dart';
 import 'package:get/get.dart';
@@ -12,3 +13,5 @@ part 'sign_in_page.dart';
 part 'sign_up_page.dart';
 part 'address_page.dart';
 part 'main_page.dart';
+part 'food_page.dart';
+part 'profile_page.dart';
