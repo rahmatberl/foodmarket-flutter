@@ -42,14 +42,12 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     Text(
-                      'Rahmat Berlianda Avandi',
-                      // mockUser.name,
+                      mockUser.name,
                       style: GoogleFonts.poppins(
                           fontSize: 18, fontWeight: FontWeight.w500),
                     ),
                     Text(
-                      'rahmatberlianda@gmail.com',
-                      //mockUser.email,
+                      mockUser.email,
                       style:
                           greyFontStyle.copyWith(fontWeight: FontWeight.w300),
                     )
