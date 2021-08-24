@@ -27,7 +27,7 @@ class User extends Equatable {
 
 User mockUser = User(
     id: 1,
-    name: 'Rahmat Berlianda Avandi',
+    name: 'Rahmat Berlianda',
     email: "rahmatberlianda@gmail.com",
     address: 'Jalan Pramuka',
     city: 'Yogyakarta',
