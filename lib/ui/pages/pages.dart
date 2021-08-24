@@ -20,3 +20,4 @@ part 'food_page.dart';
 part 'profile_page.dart';
 part 'food_detail_page.dart';
 part 'payment_page.dart';
+part 'illustration_page.dart';

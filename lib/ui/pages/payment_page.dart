@@ -327,7 +327,7 @@ class PaymentPage extends StatelessWidget {
                   style: GoogleFonts.poppins(
                       color: Colors.black, fontWeight: FontWeight.w500),
                 ),
-              ))
+              )),
         ],
       ),
     );
