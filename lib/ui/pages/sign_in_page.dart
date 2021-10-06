@@ -82,7 +82,7 @@ class _SignInPageState extends State<SignInPage> {
                         if (state is UserLoaded) {
                           context.read<FoodCubit>().getFoods();
                           context.read<TransactionCubit>().getTransaction();
-                          Get.to(MainPage());
+                          Get.to(() => MainPage());
                         }
                       },
                       elevation: 0,
@@ -107,7 +107,7 @@ class _SignInPageState extends State<SignInPage> {
                     )
                   : RaisedButton(
                       onPressed: () {
-                        Get.to(SignUpPage());
+                        Get.to(() => SignUpPage());
                       },
                       elevation: 0,
                       shape: RoundedRectangleBorder(
